@@ -1,0 +1,23 @@
+{
+  "name": "momentjs-iso8601",
+  "version": "0.0.0",
+  "authors": [
+    "tomsoir@gmail.com"
+  ],
+  "description": "fix for moment js",
+  "main": "momentjs-iso8601.js",
+  "keywords": [
+    "fix",
+    "for",
+    "monentjs",
+    "iso8601",
+    "time",
+    "format"
+  ],
+  "license": "MIT",
+  "homepage": "tomsoir.com",
+  "dependencies": {
+    "jquery"    : "~2.1.0",
+    "moment"    : "~2.6.0"
+  }
+}

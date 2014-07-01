@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Плагин для momentjs исправляющий расчет формата iso8601</title>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="bower_components/moment/moment.js"></script>
+    <script type="text/javascript" src="momentjs-iso8601.js"></script>
+</head>
+<body>
+    <form id="form">
+        <input type="text" value="PT02H20M"/>
+        <button>submit</button>
+        <div></div>
+    </form>
+
+    <script>
+        $(function(){
+            $('form').on('submit', function(){
+
+                momentDate = moment.duration.fromISOString( $('input').val() );
+                $('div').html(
+                    'seconds: '+momentDate.seconds()
+                    +'<br/>minutes: '+momentDate.minutes()
+                    +'<br/>hours: '+momentDate.hours()
+                    +'<br/>days: '+momentDate.days()
+                    +'<br/>months: '+momentDate.months()
+                    +'<br/>years: '+momentDate.years()
+                );
+
+                return false;
+            })
+        })
+    </script>
+
+</body></html>
