@@ -1,6 +1,6 @@
 {
   "name": "momentjs-iso8601",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "authors": [
     "tomsoir@gmail.com"
   ],
@@ -17,7 +17,7 @@
   "license": "MIT",
   "homepage": "tomsoir.com",
   "dependencies": {
-    "jquery"    : "~2.1.0",
-    "moment"    : "~2.6.0"
+    "jquery": "~2.1.0",
+    "moment": "~2.6.0"
   }
 }
